@@ -105,7 +105,7 @@ const keyValue = "fd85b4945YF'i"; // your key value (eg: key)
 const ivKey = "smslt";
 
 export default {
-  name: "accounts",
+  name: "index",
   data() {
     return {
       posts_search: "",
@@ -887,7 +887,6 @@ export default {
   created() {
     this.Fetch_PostAll();
   },
-
 };
 </script>
 
