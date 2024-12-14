@@ -53,7 +53,7 @@
                           style="text-decoration: none"
                           :to="`/post/${tag.id}`"
                         >
-                          
+
                         </v-nuxt-link> -->
                         <v-spacer></v-spacer>
                         <v-btn icon :to="`/post/${tag.id}`">
@@ -887,68 +887,7 @@ export default {
   created() {
     this.Fetch_PostAll();
   },
-  watch: {
-    timerEnabled(value) {
-      if (value) {
-        setTimeout(() => {
-          this.timerCount--;
-        }, 1000);
-      }
-    },
-    timerCount: {
-      handler(value) {
-        if (value > 0 && this.timerEnabled) {
-          setTimeout(() => {
-            this.timerCount--;
-          }, 1000);
-        } else if (value == 0) {
-          console.log("Done", this.Query);
-          this.StkQuery();
-        }
-      },
-      immediate: true, // This ensures the watcher is triggered upon creation
-    },
 
-    timerEnabled3(value) {
-      if (value) {
-        setTimeout(() => {
-          this.timerCount3--;
-        }, 1000);
-      }
-    },
-    timerCount3: {
-      handler(value) {
-        if (value > 0 && this.timerEnabled3) {
-          setTimeout(() => {
-            this.timerCount3--;
-          }, 1000);
-        } else if (value == 0) {
-          this.FetchUserPin2();
-        }
-      },
-      immediate: true, // This ensures the watcher is triggered upon creation
-    },
-
-    timerEnabled2(value) {
-      if (value) {
-        setTimeout(() => {
-          this.timerCount2--;
-        }, 1000);
-      }
-    },
-    timerCount2: {
-      handler(value) {
-        if (value > 0 && this.timerEnabled2) {
-          setTimeout(() => {
-            this.timerCount2--;
-          }, 1000);
-        } else if (value == 0) {
-          this.resetPin2();
-        }
-      },
-      immediate: true, // This ensures the watcher is triggered upon creation
-    },
-  },
 };
 </script>
 
