@@ -1,9 +1,9 @@
 <template>
   <div class="container">
-    <v-card elevation="0" :loading="loading" class="mx-auto my-12">
+    <v-card elevation="0" :loading="loading" class="mx-auto my-0">
       <v-card-actions>
         <v-btn style="margin: 10px" color="deep-black" text :to="`/`" icon>
-          <v-icon large>mdi-arrow-left</v-icon>
+          <v-icon>mdi-arrow-left</v-icon>
         </v-btn>
       </v-card-actions>
       <template slot="progress">
