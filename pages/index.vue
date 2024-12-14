@@ -2,7 +2,6 @@
   <div>
     <v-card color="white" elevation="0">
       <v-row justify="" align="">
-        <v-col cols="12" s="12" md="12"></v-col>
         <v-col cols="12" sm="12" md="12">
           <div class="container">
             <v-card-text>
