@@ -9,7 +9,7 @@ export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     titleTemplate: '%s ',
-    title: 'Node Mysql App',
+    title: 'Makaazi Dashboard',
     htmlAttrs: {
       lang: 'en'
     },
@@ -101,8 +101,8 @@ export default {
       themes: {
         dark: {
           green: "#66CC33",
-          primary: colors.blue.darken2,
-          accent: colors.grey.darken3,
+          primary: "#B6FF00",
+          accent: "#8051FF",
           secondary: colors.amber.darken3,
           info: colors.teal.lighten1,
           warning: colors.amber.base,
